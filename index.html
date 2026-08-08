@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
-    <meta name="google-site-verification" content="zJGUazC1dRGcZO3MRWj-ajRzYozxCEUW86zUfORjwbA" />
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dra. Williane Santos — Médica Veterinária. Atendimento veterinário em domicílio, consultas, vacinas, exames e cuidados para cães e gatos.">
-    <title>Dra. Williane Santos | Médica Veterinária</title>
+
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="zJGUazC1dRGcZO3MRWj-ajRzYozxCEUW86zUfORjwbA">
+
+    <!-- SEO -->
+    <title>Dra. Williane Santos | Médica Veterinária em Vila Velha - ES</title>
+    <meta name="description" content="Dra. Williane Santos, Médica Veterinária em Vila Velha - ES. Atendimento veterinário em domicílio para cães e gatos, consultas, vacinas, exames, microchipagem e cuidados personalizados.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://guilhermesv7.github.io/-Dra.WillianeSantos/">
+
+    <!-- Compartilhamento -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Dra. Williane Santos | Médica Veterinária em Vila Velha - ES">
+    <meta property="og:description" content="Atendimento veterinário em domicílio para cães e gatos em Vila Velha, Espírito Santo.">
+    <meta property="og:url" content="https://guilhermesv7.github.io/-Dra.WillianeSantos/">
+    <meta property="og:image" content="https://guilhermesv7.github.io/-Dra.WillianeSantos/foto-dra-williane.jpg">
+    <meta property="og:image:alt" content="Dra. Williane Santos com um gato">
+
+    <!-- Dados estruturados para o Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VeterinaryCare",
+      "@id": "https://guilhermesv7.github.io/-Dra.WillianeSantos/#veterinaria",
+      "name": "Dra. Williane Santos - Médica Veterinária",
+      "url": "https://guilhermesv7.github.io/-Dra.WillianeSantos/",
+      "telephone": "+55 27 99826-4156",
+      "description": "Atendimento veterinário em domicílio para cães e gatos em Vila Velha, Espírito Santo.",
+      "areaServed": {
+        "@type": "City",
+        "name": "Vila Velha",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Espírito Santo"
+        }
+      },
+      "image": "https://guilhermesv7.github.io/-Dra.WillianeSantos/foto-dra-williane.jpg",
+      "priceRange": "$$"
+    }
+    </script>
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,9 +60,7 @@
             --branco: #ffffff;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +69,7 @@
         }
 
         .navbar {
-            background: rgba(255,255,255,.95);
+            background: rgba(255,255,255,.96);
             backdrop-filter: blur(10px);
         }
 
@@ -49,7 +83,7 @@
             display: flex;
             align-items: center;
             background:
-                radial-gradient(circle at 85% 20%, rgba(91, 171, 224, .20), transparent 25%),
+                radial-gradient(circle at 85% 20%, rgba(91,171,224,.20), transparent 25%),
                 linear-gradient(135deg, #f5fbff 0%, #ffffff 55%, #eaf5fc 100%);
             overflow: hidden;
         }
@@ -61,9 +95,7 @@
             color: var(--azul-escuro);
         }
 
-        .hero .highlight {
-            color: var(--azul);
-        }
+        .hero .highlight { color: var(--azul); }
 
         .hero-subtitle {
             font-size: 1.25rem;
@@ -71,34 +103,32 @@
             max-width: 650px;
         }
 
+        .location-badge {
+            color: var(--azul-escuro);
+            background: #eaf5fc;
+            border: 1px solid #cfe7f7;
+        }
+
         .doctor-card {
             background: white;
             border-radius: 32px;
-            padding: 2rem;
-            box-shadow: 0 20px 60px rgba(35, 100, 166, .15);
+            padding: 1rem;
+            box-shadow: 0 20px 60px rgba(35,100,166,.15);
             border: 1px solid rgba(35,100,166,.08);
         }
 
-        .doctor-icon {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(145deg, #dff1fc, #ffffff);
-            color: var(--azul);
-            font-size: 6rem;
-        }
         .doctor-photo {
-    width: 100%;
-    height: 430px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 24px;
-    display: block;
-}
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            object-position: center 25%;
+            border-radius: 24px;
+            display: block;
+        }
+
+        .photo-caption {
+            padding: 1rem .75rem .5rem;
+        }
 
         .btn-primary-custom {
             background: var(--azul);
@@ -134,9 +164,7 @@
             color: var(--azul-escuro);
         }
 
-        .section-title span {
-            color: var(--azul);
-        }
+        .section-title span { color: var(--azul); }
 
         .service-card {
             height: 100%;
@@ -176,6 +204,14 @@
             color: #c9dced !important;
         }
 
+        .location-box {
+            background: #ffffff;
+            border: 1px solid #e3edf4;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 12px 35px rgba(18,61,107,.07);
+        }
+
         .contact-section {
             background: linear-gradient(135deg, #eaf6fd, #ffffff);
         }
@@ -187,18 +223,14 @@
             box-shadow: 0 15px 45px rgba(18,61,107,.10);
         }
 
-        .whatsapp {
-            color: #168c4b;
-        }
+        .whatsapp { color: #168c4b; }
 
         footer {
             background: var(--azul-escuro);
             color: white;
         }
 
-        .paw {
-            color: #63acd9;
-        }
+        .paw { color: #63acd9; }
 
         @media (max-width: 768px) {
             .hero {
@@ -206,12 +238,13 @@
                 min-height: auto;
             }
 
-            .about-box {
-                padding: 30px;
-            }
+            .about-box { padding: 30px; }
 
-            .doctor-card {
-                margin-top: 40px;
+            .doctor-card { margin-top: 20px; }
+
+            .doctor-photo {
+                height: 440px;
+                object-position: center 25%;
             }
         }
     </style>
@@ -219,13 +252,14 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm" aria-label="Navegação principal">
     <div class="container">
-        <a class="navbar-brand" href="#inicio">
+        <a class="navbar-brand" href="#inicio" aria-label="Dra. Williane Santos - início">
             <i class="bi bi-heart-pulse-fill me-2"></i>Dra. Williane Santos
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -233,9 +267,10 @@
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
                 <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vila-velha">Vila Velha</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                 <li class="nav-item">
-                    <a class="btn btn-primary-custom ms-lg-2" target="_blank"
+                    <a class="btn btn-primary-custom ms-lg-2" target="_blank" rel="noopener"
                        href="https://wa.me/5527998264156?text=Ol%C3%A1%2C%20Dra.%20Williane!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento.">
                         <i class="bi bi-whatsapp me-1"></i> Falar com a Doutora
                     </a>
@@ -247,14 +282,14 @@
 
 <main>
 
-    <!-- H1 principal do site -->
+    <!-- H1 principal: nome + profissão + localização aparecem naturalmente na página -->
     <section id="inicio" class="hero">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-7">
-                    <span class="badge rounded-pill text-bg-light border px-3 py-2 mb-3">
-                        <i class="bi bi-house-heart-fill me-1 paw"></i>
-                        Atendimento veterinário em domicílio
+                    <span class="badge rounded-pill location-badge px-3 py-2 mb-3">
+                        <i class="bi bi-geo-alt-fill me-1 paw"></i>
+                        Médica Veterinária em Vila Velha - Espírito Santo
                     </span>
 
                     <h1 class="mb-4">
@@ -264,13 +299,13 @@
                     <p class="fs-4 fw-semibold mb-2">Médica Veterinária</p>
 
                     <p class="hero-subtitle mb-4">
-                        Cuidado, carinho e atendimento personalizado para cuidar
-                        da saúde do seu melhor amigo com mais conforto e tranquilidade.
+                        Atendimento veterinário em domicílio em Vila Velha, ES,
+                        com cuidado, carinho e atenção personalizada para cães e gatos.
                     </p>
 
                     <div class="d-flex flex-wrap gap-3">
-                        <a class="btn btn-primary-custom btn-lg" target="_blank"
-                           href="https://wa.me/5527998264156?text=Ol%C3%A1%2C%20Dra.%20Williane!%20Gostaria%20de%20conversar%20sobre%20um%20atendimento.">
+                        <a class="btn btn-primary-custom btn-lg" target="_blank" rel="noopener"
+                           href="https://wa.me/5527998264156?text=Ol%C3%A1%2C%20Dra.%20Williane!%20Gostaria%20de%20conversar%20sobre%20um%20atendimento%20veterin%C3%A1rio%20em%20Vila%20Velha.">
                             <i class="bi bi-whatsapp me-2"></i>Conversar pelo WhatsApp
                         </a>
 
@@ -281,21 +316,23 @@
                 </div>
 
                 <div class="col-lg-5">
-    <div class="doctor-card photo-card">
-        <img
-            src="foto-dra-williane.jpg"
-            alt="Dra. Williane Santos com um gato"
-            class="doctor-photo"
-        >
-
-        <h2 class="h3 fw-bold mt-4">Atendimento humanizado</h2>
-
-        <p class="text-secondary mb-0">
-            Um cuidado mais próximo para cães e gatos,
-            no conforto da sua casa.
-        </p>
-    </div>
-</div>
+                    <div class="doctor-card">
+                        <img
+                            src="foto-dra-williane.jpg"
+                            alt="Dra. Williane Santos, médica veterinária, com um gato"
+                            class="doctor-photo"
+                            width="1086"
+                            height="1448"
+                            fetchpriority="high"
+                        >
+                        <div class="photo-caption text-center">
+                            <h2 class="h3 fw-bold mb-1">Atendimento humanizado</h2>
+                            <p class="text-secondary mb-0">
+                                Um cuidado mais próximo para cães e gatos, no conforto da sua casa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -307,7 +344,9 @@
                 <div class="row align-items-center g-4">
                     <div class="col-lg-8">
                         <span class="text-uppercase fw-bold small">Conheça o trabalho</span>
-                        <h2 class="display-6 fw-bold mt-2">Medicina veterinária com cuidado e carinho.</h2>
+                        <h2 class="display-6 fw-bold mt-2">
+                            Medicina veterinária com cuidado e carinho em Vila Velha.
+                        </h2>
                         <p class="fs-5 text-muted mt-3 mb-0">
                             A proposta é oferecer um atendimento próximo, tranquilo e
                             personalizado, respeitando as necessidades de cada animal
@@ -332,11 +371,11 @@
                     O que ofereço
                 </p>
                 <h2 class="display-6 section-title">
-                    Serviços para o seu <span>melhor amigo</span>
+                    Serviços veterinários para o seu <span>melhor amigo</span>
                 </h2>
-                <p class="text-secondary mx-auto" style="max-width: 650px;">
-                    Atendimento pensado para oferecer praticidade, conforto e
-                    cuidado em todas as etapas.
+                <p class="text-secondary mx-auto" style="max-width: 700px;">
+                    Atendimento veterinário em domicílio pensado para oferecer praticidade,
+                    conforto e cuidado para cães e gatos em Vila Velha, Espírito Santo.
                 </p>
             </div>
 
@@ -346,9 +385,7 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-heart-pulse"></i></div>
                         <h3 class="h5 fw-bold">Consulta Clínica Geral</h3>
-                        <p class="text-secondary mb-0">
-                            Avaliação completa da saúde do seu pet com atenção e carinho.
-                        </p>
+                        <p class="text-secondary mb-0">Avaliação completa da saúde do seu pet com atenção e carinho.</p>
                     </div>
                 </div>
 
@@ -356,9 +393,7 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-eyedropper"></i></div>
                         <h3 class="h5 fw-bold">Exames Laboratoriais</h3>
-                        <p class="text-secondary mb-0">
-                            Auxílio no diagnóstico e acompanhamento da saúde do seu pet.
-                        </p>
+                        <p class="text-secondary mb-0">Auxílio no diagnóstico e acompanhamento da saúde do seu pet.</p>
                     </div>
                 </div>
 
@@ -366,9 +401,7 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-airplane"></i></div>
                         <h3 class="h5 fw-bold">Atestado de Viagem</h3>
-                        <p class="text-secondary mb-0">
-                            Documentação necessária para viagens nacionais e internacionais.
-                        </p>
+                        <p class="text-secondary mb-0">Documentação necessária para viagens nacionais e internacionais.</p>
                     </div>
                 </div>
 
@@ -376,9 +409,7 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-syringe"></i></div>
                         <h3 class="h5 fw-bold">Medicamentos Injetáveis</h3>
-                        <p class="text-secondary mb-0">
-                            Aplicação segura de medicamentos conforme orientação veterinária.
-                        </p>
+                        <p class="text-secondary mb-0">Aplicação segura de medicamentos conforme orientação veterinária.</p>
                     </div>
                 </div>
 
@@ -386,9 +417,7 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-cpu"></i></div>
                         <h3 class="h5 fw-bold">Microchipagem</h3>
-                        <p class="text-secondary mb-0">
-                            Identificação segura e permanente para o seu animal.
-                        </p>
+                        <p class="text-secondary mb-0">Identificação segura e permanente para o seu animal.</p>
                     </div>
                 </div>
 
@@ -396,9 +425,7 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-plus-square"></i></div>
                         <h3 class="h5 fw-bold">Curativos</h3>
-                        <p class="text-secondary mb-0">
-                            Cuidados com feridas e lesões, acompanhando a recuperação do pet.
-                        </p>
+                        <p class="text-secondary mb-0">Cuidados com feridas e lesões, acompanhando a recuperação do pet.</p>
                     </div>
                 </div>
 
@@ -406,9 +433,7 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-shield-check"></i></div>
                         <h3 class="h5 fw-bold">Vacinas para Cães</h3>
-                        <p class="text-secondary mb-0">
-                            Vacinação para ajudar a manter seu cão protegido e saudável.
-                        </p>
+                        <p class="text-secondary mb-0">Vacinação para ajudar a manter seu cão protegido e saudável.</p>
                     </div>
                 </div>
 
@@ -416,9 +441,7 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-shield-heart"></i></div>
                         <h3 class="h5 fw-bold">Vacinas para Gatos</h3>
-                        <p class="text-secondary mb-0">
-                            Cuidados preventivos para uma vida mais saudável e protegida.
-                        </p>
+                        <p class="text-secondary mb-0">Cuidados preventivos para uma vida mais saudável e protegida.</p>
                     </div>
                 </div>
 
@@ -426,12 +449,29 @@
                     <div class="service-card">
                         <div class="service-icon"><i class="bi bi-house-heart"></i></div>
                         <h3 class="h5 fw-bold">Atendimento em Domicílio</h3>
-                        <p class="text-secondary mb-0">
-                            Atendimento veterinário no conforto e segurança da sua casa.
-                        </p>
+                        <p class="text-secondary mb-0">Atendimento veterinário no conforto e segurança da sua casa.</p>
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização/SEO local -->
+    <section id="vila-velha" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="location-box text-center">
+                        <i class="bi bi-geo-alt-fill display-4" style="color: var(--azul);"></i>
+                        <h2 class="h2 fw-bold mt-3">Atendimento veterinário em Vila Velha - ES</h2>
+                        <p class="lead text-secondary mb-0">
+                            A Dra. Williane Santos oferece atendimento veterinário em domicílio
+                            para cães e gatos em Vila Velha, no Espírito Santo, buscando levar
+                            mais conforto e tranquilidade para os pets e seus tutores.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -448,12 +488,12 @@
 
                         <p class="lead text-secondary">
                             Tem alguma dúvida sobre seu pet ou deseja saber mais
-                            sobre os atendimentos? Envie uma mensagem diretamente
-                            para a Dra. Williane.
+                            sobre os atendimentos veterinários em Vila Velha?
+                            Envie uma mensagem diretamente para a Dra. Williane.
                         </p>
 
-                        <a class="btn btn-primary-custom btn-lg mt-2" target="_blank"
-                           href="https://wa.me/5527998264156?text=Ol%C3%A1%2C%20Dra.%20Williane!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar.">
+                        <a class="btn btn-primary-custom btn-lg mt-2" target="_blank" rel="noopener"
+                           href="https://wa.me/5527998264156?text=Ol%C3%A1%2C%20Dra.%20Williane!%20Vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20atendimento%20em%20Vila%20Velha.">
                             <i class="bi bi-whatsapp me-2"></i>
                             Enviar mensagem
                         </a>
@@ -473,9 +513,8 @@
 <footer class="py-4">
     <div class="container text-center">
         <p class="mb-1 fw-bold">Dra. Williane Santos</p>
-        <p class="mb-0 small opacity-75">
-            Médica Veterinária · Atendimento em domicílio
-        </p>
+        <p class="mb-1 small opacity-75">Médica Veterinária</p>
+        <p class="mb-0 small opacity-75">Atendimento veterinário em domicílio · Vila Velha - Espírito Santo</p>
     </div>
 </footer>
 

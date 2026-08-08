@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guilhermesv7.github.io/-Dra.WillianeSantos/sitemap.xml
